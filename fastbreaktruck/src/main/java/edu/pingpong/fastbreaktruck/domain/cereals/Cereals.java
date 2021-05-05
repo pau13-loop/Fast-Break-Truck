@@ -8,7 +8,7 @@ public abstract class Cereals implements Cloneable {
 
     abstract void draw();
 
-    public String getType() {
+    public String getName() {
         return NAME;
     }
 
