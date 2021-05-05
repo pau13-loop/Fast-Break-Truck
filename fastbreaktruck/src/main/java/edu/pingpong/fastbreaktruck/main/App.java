@@ -1,9 +1,26 @@
-package edu.pingpong.fastbreaktruck;
+package edu.pingpong.fastbreaktruck.main;
+
+import edu.pingpong.fastbreaktruck.domain.cache.CerealsCache;
+import edu.pingpong.fastbreaktruck.domain.cereals.Cereals;
 
 public class App {
 
 	public static void main(String[] args) {
 
+		// Primera Prueba 
+		CerealsCache.loadCache();
+
+		// conciliatory message
+		System.out.println("\nNo abras la caja de Eyeholes!");
+		// Show menu details
+		Cereals clonedCereals = (Cereals) CerealsCache.getCereals("smiggles");
+		// Cereals clonedCerealsPvp = (Cereals) CerealsCache.getCerealsPvp("eyeholes");
+
+		System.out.println("\nItem: " + clonedCereals.getType() + "\nPrice: " + clonedCereals.getPvp());
+		System.out.println("\n\tPrecio pedido: ");
+		
+		
+		
 		/**
 		 * Desayuno Eyeholes
 		 */
@@ -31,5 +48,5 @@ public class App {
 	// 	System.out.println("\nEyeholes con plumbus!");
 	// 	eyeDes.mostrarItems();
 	// 	System.out.print("Precio pedido: " + eyeDes.getCoste());
-	// }
+	}
 }
