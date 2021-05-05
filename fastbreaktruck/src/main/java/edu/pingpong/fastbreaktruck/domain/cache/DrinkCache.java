@@ -4,6 +4,7 @@ import java.util.Hashtable;
 
 import edu.pingpong.fastbreaktruck.domain.drink.Drink;
 import edu.pingpong.fastbreaktruck.domain.drink.FleebJuice;
+import edu.pingpong.fastbreaktruck.domain.drink.Licor43;
 import edu.pingpong.fastbreaktruck.domain.drink.TurbulentJuice;
 
 public class DrinkCache {
@@ -26,5 +27,9 @@ public class DrinkCache {
             TurbulentJuice turbulentJuice = new TurbulentJuice();
             turbulentJuice.setId("turbulent");
             drinksMap.put(turbulentJuice.getId(), turbulentJuice);
+
+            Licor43 licor = new Licor43();
+            licor.setId("licor");
+            drinksMap.put(licor.getId(), licor);
         }
 }
