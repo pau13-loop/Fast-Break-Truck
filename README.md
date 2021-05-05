@@ -65,7 +65,7 @@ My opinion about this kata, I've founded so interesting the personal chance to c
 
 ## UML Diagram
 
-![UML Diagram](./doc/UMLDiagram.jpg "UML")
+![UML Diagram](./fastbreaktruck/doc/UMLDiagram.jpg "UML")
 
 ---
 
