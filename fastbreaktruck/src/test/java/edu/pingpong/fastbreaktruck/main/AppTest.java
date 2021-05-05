@@ -1,4 +1,4 @@
-package edu.pingpong.fastbreaktruck;
+package edu.pingpong.fastbreaktruck.main;
 
 import static org.junit.Assert.assertTrue;
 
