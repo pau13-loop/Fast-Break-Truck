@@ -4,7 +4,7 @@ public class Eyeholes extends Cereals {
 
     public Eyeholes() {
         NAME = "Eyeholes";
-        PVP = 15;
+        PVP = 25;
     }
 
     @Override

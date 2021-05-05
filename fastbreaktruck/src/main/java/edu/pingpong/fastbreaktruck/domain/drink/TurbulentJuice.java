@@ -4,7 +4,7 @@ public class TurbulentJuice extends Drink{
 
     public TurbulentJuice() {
         NAME = "Tubulent Juice";
-        PVP = 10;
+        PVP = 30;
     }
 
     @Override

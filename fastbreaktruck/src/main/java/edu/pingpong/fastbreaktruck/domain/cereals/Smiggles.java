@@ -4,7 +4,7 @@ public class Smiggles extends Cereals{
 
     public Smiggles() {
         NAME = "Smiggles";
-        PVP = 15;
+        PVP = 50;
     }
 
     @Override
