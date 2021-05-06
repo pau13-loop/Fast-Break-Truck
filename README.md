@@ -8,6 +8,7 @@
 
 1. [Motivation](#motivation)
 1. [Used Technologies](#used-technologies)
+1. [Why choose this pattern ?](#why-choose-this-pattern-?)
 1. [Pros and Cons](#pros-and-cons)
 1. [Reflections](#reflections)
 1. [UML Diagram](#uml-diagram)
@@ -31,6 +32,26 @@ The biggest motivation for this project has been actually having the chance to c
 - Jacoco
 - MarkDown
 - Github
+
+---
+
+**[⬆ back to top](#table-of-contents)**
+
+## Why choose this pattern ?
+
+In this section I'll enumerate the main reasons that made me choose this design pattern for a fast-food-truck chain and hopefully you'll understand what it makes this pattern really cool:
+
+1. The Prototype pattern is a creational design pattern that allows you to copy existent objects without make the code dependent of their classes
+
+2. The implementation of the clone() method is really similar between the different classes and make his application easier. The clone() method creates an object from the actual class and bring all the values from the old fields to the new ones. This method even allows you to copy private fields, because most of the programming languages allow the objects access to the private fields of other objects belonging to the same class
+
+3. An object that support the cloning is called a **prototype**. When your objects have dozens of fields and thousand of possible configurations, the cloning gives you an alternative to create more subclasses
+
+4. This is how it works, let's you create a group of objects configured by different ways. When you'll need an object like the one you just have configured, let's you clone a prototype instead to have to build a new object from nothing
+
+5. This pattern is used when creation of object directly is costly. For example, an object is to be created after a costly database operation. We can cache the object, return its clone on next request and update the database as and when needed this reducing database calls
+
+6. **Prototype pattern refers to creating duplicate object while keeping performance in mind.**
 
 ---
 
