@@ -65,8 +65,6 @@ public class App {
 				+ clonedTurbulent.getPvp());
 		System.out.println("\nItem: " + clonedPlumbus.getName() + "\nEnvelop: " + clonedBox.getName() + "\nPrice: "
 				+ clonedPlumbus.getPvp());
-		System.out.println(
-				"\n\tPrecio pedido: " + (clonedEyes.getPvp() + clonedTurbulent.getPvp() + clonedPlumbus.getPvp()));
 
 		// MENU 4 - PING PONG
 
