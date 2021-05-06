@@ -18,18 +18,24 @@ public class DrinkCache {
         return (Drink) cachedDrink.clone();
     }
 
-        // Create cereal objects and add the objects to the dictionary to afterwards be able to make a copy of them
-        public static void loadCache() {
-            FleebJuice fleebjuice = new FleebJuice();
-            fleebjuice.setId("fleeb");
-            drinksMap.put(fleebjuice.getId(), fleebjuice);
-    
-            TurbulentJuice turbulentJuice = new TurbulentJuice();
-            turbulentJuice.setId("turbulent");
-            drinksMap.put(turbulentJuice.getId(), turbulentJuice);
+    // Create cereal objects and add the objects to the dictionary to afterwards be
+    // able to make a copy of them
+    public static void loadCache() {
+        FleebJuice fleebjuice = new FleebJuice();
+        fleebjuice.setId("fleeb");
+        drinksMap.put(fleebjuice.getId(), fleebjuice);
 
-            Licor43 licor = new Licor43();
-            licor.setId("licor");
-            drinksMap.put(licor.getId(), licor);
-        }
+        TurbulentJuice turbulentJuice = new TurbulentJuice();
+        turbulentJuice.setId("turbulent");
+        drinksMap.put(turbulentJuice.getId(), turbulentJuice);
+
+        Licor43 licor = new Licor43();
+        licor.setId("licor");
+        drinksMap.put(licor.getId(), licor);
+    }
+
+    // Get Length Map
+    public int getLengthMap() {
+        return this.drinksMap.size();
+    }
 }

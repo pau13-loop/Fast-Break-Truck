@@ -11,11 +11,6 @@ public class EnvelopCache {
     // Create map with all kinds of cereals
     private static Hashtable<String, Envelop> envelopsMap = new Hashtable<>();
 
-    public static Envelop getEnvelop2(String envelopId) {
-        Envelop cachedEnvelop = envelopsMap.get(envelopId);
-        return (Envelop) cachedEnvelop.clone();
-    }
-
     // Get cereal object from map and make a clone of it
     public static Envelop getEnvelop(String envelopId) {
         Envelop cachedEnvelop = envelopsMap.get(envelopId);
