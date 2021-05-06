@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.lang.annotation.Target;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import edu.pingpong.fastbreaktruck.domain.envelop.Bottle;
@@ -12,18 +13,23 @@ import edu.pingpong.fastbreaktruck.domain.envelop.Envelop;
 public class EnvelopCacheTest {
     
     private EnvelopCache envCache = new EnvelopCache();
-    private Bottle bottle = new Bottle();
+    private Envelop bottle = new Bottle();
+
+    @Before
+    public void setupEnvelop() {
+        bottle.setId("bottle");
+        envCache.loadCache();
+    }
 
 
     @Test
     public void testSizeMap() {
-        envCache.loadCache();
         assertEquals(2, envCache.getLengthMap());
     }
 
     @Test
     public void getBottleTest() {
-
-        assertEquals(bottle, envCache.getEnvelop2("bottle"));
+        assertEquals(bottle.getName(), envCache.getEnvelop("bottle").getName());
+        assertEquals(bottle.getId(), envCache.getEnvelop("bottle").getId());
     }
 }
